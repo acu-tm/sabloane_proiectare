@@ -3,25 +3,25 @@ import java.util.List;
 
 public class Book {
     String title;
-    List<Object> book = new ArrayList<Object>();
+    Autor autor;
+
+    List<Chapter> chapters = new ArrayList<>();
 
     public Book(String title) {
         this.title = title;
     }
 
-    public void createNewParagraph(String p){
-        book.add(p);
-    }
-    public void createNewImage(String i){
-        book.add(i);
-    }
-    public void createNewTable(String t){
-        book.add(t);
+    public int createChapter(String name){
+        Chapter chapter = new Chapter(name);
+        chapters.add(chapter);
+        return chapters.indexOf(chapter);
     }
 
-    public void print(){
-        System.out.println(title);
-        for(Object k:book)
-            System.out.println(k);
+    public Chapter getChapter(int index) {
+        return chapters.get(index);
+    }
+
+    public void addAuthor(Autor autor){
+        this.autor=autor;
     }
 }
