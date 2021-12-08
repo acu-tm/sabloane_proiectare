@@ -14,3 +14,7 @@ https://github.com/acu-tm/sabloane_proiectare/tree/1f2cb60fe494271596e47d8f76bac
 
 ImageProxy should implement also an Element
 - implement print() method .. .where the loaded image is printed
+
+# Feedback lab5:
+
+no content
