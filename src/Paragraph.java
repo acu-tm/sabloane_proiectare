@@ -1,5 +1,6 @@
 public class Paragraph implements Element{
     String text;
+    AlignStrategy alignStrategy;
 
     public Paragraph(String text) {
         this.text = text;
@@ -8,7 +9,13 @@ public class Paragraph implements Element{
 
     @Override
     public void print() {
-        System.out.println("Paragraph: " + this.text);
+        if (this.alignStrategy==null)
+            System.out.println(this.text);
+        else
+            this.alignStrategy.render(this.text);
+    }
+    public void setAlignStrategy(AlignStrategy aligObj){
+        this.alignStrategy=aligObj;
     }
 
     @Override
