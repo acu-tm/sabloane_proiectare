@@ -18,3 +18,11 @@ ImageProxy should implement also an Element
 # Feedback lab5:
 
 no content
+
+# Feedback lab6:
+https://github.com/acu-tm/sabloane_proiectare/tree/87483052c9c82d5a9ae423f6f7ee0903e7a6309b
+delayed lab5
+
+lab6: no content
+
+# Proposed grade: 7.5
